@@ -10,6 +10,8 @@ def model_view(request):
     file_path = os.path.join(module_dir, filename)
     
     loaded_model = pickle.load(open(file_path, 'rb'))
+    
+    # Init with default values
     my_data = [0, 0, 0, 0]
     result = 0
     weeks = 10
