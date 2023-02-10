@@ -1,10 +1,11 @@
 from sklearn import model_selection
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegression, LinearRegression
+import pickle
 
 
 def model_view(request):
     
-    filename = 'files/tr_model.sav'
+    filename = 'model/tr_model.sav'
     module_dir = os.path.dirname(__file__)
     file_path = os.path.join(module_dir, filename)
     
